@@ -1,3 +1,13 @@
 spring:
   application:
     name: techvika-kafka-producer-ms
+
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092,localhost:9094,localhost:9096
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JacksonJsonSerializer
+
+# Server Port
+server:
+  port: 9081
