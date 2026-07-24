@@ -2,6 +2,18 @@ spring:
   application:
     name: techvika-kafka-producer-ms
 
+  datasource:
+    url: jdbc:postgresql://localhost:5432/user_db_local
+
+    username: postgres
+    password: techvika
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
   kafka:
     producer:
       bootstrap-servers: localhost:9092,localhost:9094,localhost:9096

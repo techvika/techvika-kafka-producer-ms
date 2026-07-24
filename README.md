@@ -32,4 +32,4 @@ kafka-console-producer.bat --bootstrap-server localhost:9092,localhost:9094,loca
 kafka-console-producer.bat --bootstrap-server localhost:9092,localhost:9094,localhost:9096 --topic techvika-topic-1 --property "parse.key=true" --property "key.separator=:"
 
 # Consume message from Topic [commandline]
-kafka-console-consumer.bat --topic techvika-topic-1 --from-beginning --bootstrap-server localhost:9092,localhost:9094
+kafka-console-consumer.bat --topic user-created-events-topic-1 --from-beginning --bootstrap-server localhost:9092,localhost:9094
